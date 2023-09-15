@@ -306,7 +306,10 @@ footer p {
     padding-inline: 15px;
   }
   /* nav bar */
-
+nav {
+    flex-direction: column;
+    gap: 25px;
+}
   /* hero  */
   .hero-section {
     display: flex;
@@ -321,10 +324,10 @@ footer p {
   }
 
   .hero-section__text h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .hero-section__text p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .hero-section__icons {
@@ -399,6 +402,9 @@ footer p {
     border-radius: 25px;
     /* margin: 12px; */
     cursor: pointer;
+  }
+  .projects-section-text {
+  width: 100%;
   }
   .projects-section-text * {
     font-size: 1rem;
