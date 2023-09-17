@@ -28,6 +28,7 @@ li {
 }
 body {
   font-family: var(--primary-font);
+  width:100%;
 }
 html {
   scroll-behavior: smooth;
