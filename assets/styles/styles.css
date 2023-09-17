@@ -8,7 +8,13 @@
 
   --primary-font: "Roboto", sans-serif;
 }
-
+*::selection{
+  background-color: transparent;
+}
+p::selection{
+  background-color: var(--light-dark);
+  color: var(--mild-white);
+}
 /* css rest  */
 *,
 *::before,
@@ -28,7 +34,6 @@ li {
 }
 body {
   font-family: var(--primary-font);
-  width:100%;
 }
 html {
   scroll-behavior: smooth;
@@ -299,6 +304,12 @@ footer p {
 } */
 /* mini mobile   */
 @media all and (max-width: 480px) {
+  body{
+    width: 100vw;
+  }
+  main{
+    width: 100vw;
+  }
   .hero-section,
   .about-section,
   .projects-section,
