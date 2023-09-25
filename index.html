@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khaja Sharif - Protfolio</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- favicon -->
     <link
       rel="shortcut icon"
       href="./assets/images/khaja-sharif-profile-pic.jpg"
@@ -21,15 +34,83 @@
     />
   </head>
   <body>
-    <nav>
-      <h1>Khaja Sharif</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-secondary">
+      <!-- container fluid  -->
+      <div class="container-fluid">
+        <!-- container -->
+        <div
+          class="container d-flex align-items-center justify-content-between py-3 px-0"
+        >
+          <!-- logo -->
+          <a class="navbar-brand bg-dark-subtle rounded p-2" href="#"
+            >Khaja Sharif</a
+          >
+          <!-- logo -->
+
+          <!-- hammberger icon  -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- hammberger icon  -->
+          <!-- nav items  -->
+          <div
+            class="offcanvas offcanvas-end bg-secondary"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <!-- logo -->
+                <a class="navbar-brand bg-secondary-subtle rounded p-2" href="#"
+                  >Khaja Sharif</a
+                >
+                <!-- logo -->
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white border-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- nav items  -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- container fluid -->
     </nav>
+
     <main>
       <section id="home">
         <div class="hero-section">
@@ -256,8 +337,10 @@
       <section id="contact">
         <div class="contact-section">
           <h2 class="contact-section__title">Contact</h2>
-          <div class="contact-section-text">
-            <h3>connect me in ! 👇</h3>
+          <div
+            class="contact-section-text d-flex justify-content-lg-between align-items-center"
+          >
+            <h3>connect me in ! 👉</h3>
 
             <ul class="contact-section__icons">
               <li>
@@ -311,5 +394,12 @@
         </li>
       </ul>
     </footer>
+
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
