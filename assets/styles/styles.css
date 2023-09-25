@@ -8,7 +8,13 @@
 
   --primary-font: "Roboto", sans-serif;
 }
-
+*::selection{
+  background-color: transparent;
+}
+p::selection{
+  background-color: var(--light-dark);
+  color: var(--mild-white);
+}
 /* css rest  */
 *,
 *::before,
@@ -298,6 +304,13 @@ footer p {
 } */
 /* mini mobile   */
 @media all and (max-width: 480px) {
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  main{
+    width: 100vw;
+  }
   .hero-section,
   .about-section,
   .projects-section,
@@ -306,7 +319,10 @@ footer p {
     padding-inline: 15px;
   }
   /* nav bar */
-
+nav {
+    flex-direction: column;
+    gap: 25px;
+}
   /* hero  */
   .hero-section {
     display: flex;
@@ -321,10 +337,10 @@ footer p {
   }
 
   .hero-section__text h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .hero-section__text p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .hero-section__icons {
@@ -399,6 +415,9 @@ footer p {
     border-radius: 25px;
     /* margin: 12px; */
     cursor: pointer;
+  }
+  .projects-section-text {
+  width: 100%;
   }
   .projects-section-text * {
     font-size: 1rem;
